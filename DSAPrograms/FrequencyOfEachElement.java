@@ -1,4 +1,4 @@
-package Arrays;
+package DSAPrograms;
 
 public class FrequencyOfEachElement {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Arrays;
+package DSAPrograms;
 
 public class ArrayInitilizaton {
 	public static void main(String[] args) {
