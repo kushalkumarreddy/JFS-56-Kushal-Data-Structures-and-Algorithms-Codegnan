@@ -4,24 +4,26 @@ import java.util.HashSet;
 
 public class TwoSum {
 	public static void main(String[] args) {
+		
 		int[] arr = {2, 7, 11, 15};
         int target = 9;
 
-        HashSet<Integer> set = new HashSet<>();
+        HashMap<Integer, Integer> map = new HashMap<>();
 
-        for (int num : arr) {
+        for (int i = 0; i < arr.length; i++) {
 
-            int complement = target - num;
+            int complement = target - arr[i];
 
-            if (set.contains(complement)) {
-                System.out.println("Pair: " + complement + ", " + num);
+            if (map.containsKey(complement)) {
+                System.out.println("Indexes: " + map.get(complement) + ", " + i);
                 return;
             }
 
-            set.add(num);
+            map.put(arr[i], i);
         }
 
         System.out.println("No pair found");
+
 	}
 
 }
